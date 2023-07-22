@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Open in wezterm
+node ./index.js $1 $2 | xargs curl --silent -L --output - | wezterm imgcat
+
+# Open in browser
+# node ./index.js | xargs open
